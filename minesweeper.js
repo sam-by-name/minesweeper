@@ -3,43 +3,43 @@ document.addEventListener('DOMContentLoaded', startGame)
 // Define your `board` object here!
 var board = {
   cells:[
-// This is a 3x3 grid
-// The three lines below declare my first "row" of three segments (col:0,1,2)
+// This is a 6x6 grid
+// The six lines below declare my first "row" of six segments (col:0,1,2)
     { row: 0, col: 0, isMine: true, hidden: true },
     { row: 0, col: 1, isMine: false, hidden: true },
     { row: 0, col: 2, isMine: false, hidden: true },
     { row: 0, col: 3, isMine: false, hidden: true },
     { row: 0, col: 4, isMine: false, hidden: true },
     { row: 0, col: 5, isMine: true, hidden: true },
-// The three lines below declare my second row of three segments (col:0,1,2)
+// The six lines below declare my second row of six segments (col:0,1,2)
     { row: 1, col: 0, isMine: true, hidden: true },
     { row: 1, col: 1, isMine: true, hidden: true },
     { row: 1, col: 2, isMine: false, hidden: true },
     { row: 1, col: 3, isMine: false, hidden: true },
     { row: 1, col: 4, isMine: true, hidden: true },
     { row: 1, col: 5, isMine: false, hidden: true },
-// The three lines below declare my third row of three segments (col:0,1,2)
+// The six lines below declare my third row of six segments (col:0,1,2)
     { row: 2, col: 0, isMine: false, hidden: true },
     { row: 2, col: 1, isMine: false, hidden: true },
     { row: 2, col: 2, isMine: true, hidden: true },
     { row: 2, col: 3, isMine: false, hidden: true },
     { row: 2, col: 4, isMine: true, hidden: true },
     { row: 2, col: 5, isMine: true, hidden: true },
-    // The three lines below declare my third row of three segments (col:0,1,2)
+    // The six lines below declare my third row of six segments (col:0,1,2)
     { row: 3, col: 0, isMine: false, hidden: true },
     { row: 3, col: 1, isMine: true, hidden: true },
     { row: 3, col: 2, isMine: true, hidden: true },
     { row: 3, col: 3, isMine: false, hidden: true },
     { row: 3, col: 4, isMine: true, hidden: true },
     { row: 3, col: 5, isMine: true, hidden: true },
-    // The three lines below declare my third row of three segments (col:0,1,2)
+    // The six lines below declare my third row of six segments (col:0,1,2)
     { row: 4, col: 0, isMine: false, hidden: true },
     { row: 4, col: 1, isMine: true, hidden: true },
     { row: 4, col: 2, isMine: true, hidden: true },
     { row: 4, col: 3, isMine: false, hidden: true },
     { row: 4, col: 4, isMine: true, hidden: true },
     { row: 4, col: 5, isMine: false, hidden: true },
-    // The three lines below declare my third row of three segments (col:0,1,2)
+    // The six lines below declare my third row of six segments (col:0,1,2)
     { row: 5, col: 0, isMine: false, hidden: true },
     { row: 5, col: 1, isMine: true, hidden: true },
     { row: 5, col: 2, isMine: true, hidden: true },
@@ -62,7 +62,7 @@ function startGame () {
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
 function checkForWin () {
-
+  document.addEventListener 
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
   //   lib.displayMessage('You win!')
