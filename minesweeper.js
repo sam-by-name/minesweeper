@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', startGame)
 var board = {
   cells:[]
 }
+
 function initGrid () {
   var grid = 6;
   for (var x = 0; x < grid; x++) {
@@ -69,7 +70,6 @@ function initBooms ()  {
     board.cells[Math.floor(Math.random() * board.cells.length)].isMine = true;
   }
 }
-
 
 
 function startGame () {
@@ -105,5 +105,15 @@ function countSurroundingMines (cell) {
     }
   }
   return count;
+}
+
+function retry () {
+  removeListeners ();
+  freshStart ();
+  startGame ();
+}
+function freshStart () {
+  var board = document.getElementsByClassName('board')[0];
+  board.innerHTML = '';
 }
 
