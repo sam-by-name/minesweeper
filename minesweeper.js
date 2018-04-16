@@ -109,11 +109,12 @@ function countSurroundingMines (cell) {
 
 function retry () {
   removeListeners ();
-  freshStart ();
+  restart ();
   startGame ();
 }
-function freshStart () {
-  var board = document.getElementsByClassName('board')[0];
+function restart () {
+  let board = document.getElementsByClassName('board')[0];
   board.innerHTML = '';
 }
+
 
