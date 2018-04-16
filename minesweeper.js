@@ -110,7 +110,7 @@ function countSurroundingMines (cell) {
 function retry () {
   removeListeners ();
   restart ();
-  startGame ();
+  startGame (); // after this point it does not work and tells me that 36 cells is the max ... ?
 }
 function restart () {
   let board = document.getElementsByClassName('board')[0];
