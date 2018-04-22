@@ -10,6 +10,11 @@
   <body id="body">
     <div id="message"></div>
     <div id="notes"></div>
+    <div class="totals">
+      <div class="total">
+        <span id="mine-total">0</span>
+      </div>
+    </div>
     <div class="board"></div>
     <div class="tryAgain">
       <input type="button" value="Fresh Start" onclick="retry()">
@@ -20,7 +25,5 @@
       <input id="hard" type="button" value="Hard" onclick="retryHard()">
       <input id="extreme" type="button" value="Extreme" onclick="retryVeryHard()">
     </div>
-    <audio id='victory' src="victory.mp3" type="audio/mpeg"></audio>
-    <audio id='gameOver' src="gameOver.mp3" type="audio/mpeg"></audio>
   </body>
 </html>
