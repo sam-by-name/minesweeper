@@ -8,7 +8,7 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
-  background: url(nightsky.jpg);
+  background: url(./images/ff7Toon.jpg);
 }
 
 #message, #notes {

@@ -118,28 +118,28 @@ function retryEasy () {
   removeListeners ();
   restart ();
   grid = 3;
-  document.getElementById('body').style.background = 'url("cloud.jpeg") 100%'; 
+  document.getElementById('body').style.background = 'url(./images/cloud.jpeg) 100%'; 
   startGame ();
 }
 function retryMed () {
   removeListeners ();
   restart ();
   grid = 6;
-  document.getElementById('body').style.background = 'url(ff7Toon.jpg)'; 
+  document.getElementById('body').style.background = 'url(./images/ff7Toon.jpg)'; 
   startGame (); 
 }
 function retryHard () {
   removeListeners ();
   restart ();
   grid = 9;
-  document.getElementById('body').style.background = 'url(Mc.jpg)'; 
+  document.getElementById('body').style.background = 'url(./images/Mc.jpg)'; 
   startGame (); 
 }
 function retryVeryHard () {
   removeListeners ();
   restart ();
   grid = 12;
-  document.getElementById('body').style.background = 'url(suicide.jpg)';
+  document.getElementById('body').style.background = 'url(./images/suicide.jpg)';
   startGame (); 
 }
 function restart () {
