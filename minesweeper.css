@@ -33,7 +33,7 @@ body {
   height: 75px;
   border: 1px #ccc dotted;
   border-radius: 10%;
-  background-color: rgba(255, 255, 255, 0.555);
+  background-color: rgba(255, 255, 255, 0.733);
   margin: 3px;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ div.mine, div.mine:hover {
 }
 
 div.hidden {
-  background: rgba(238, 238, 238, 0.712);
+  background: rgba(238, 238, 238, 0.863);
 }
 
 div.hidden:hover {
@@ -61,5 +61,37 @@ div.marked, div.marked:hover {
 }
 
 .tryAgain input {
-  color     : blue;
+  color: rgb(188, 8, 233);
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  border: 4px solid rgb(255, 230, 0);
+  background-color : none;
+}
+#easy {
+  color: rgb(28, 99, 231);
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  border: 4px solid #0099CC;
+  background-color : none;
+}
+#medium {
+  color: green;
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  border: 4px solid rgb(9, 240, 9);
+  background-color : none;
+}
+#hard {
+  color: rgb(236, 8, 8);
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  border: 4px solid rgb(255, 38, 0);
+  background-color : none;
+}
+#extreme {
+  color: rgb(22, 22, 22);
+  border-radius: 8px;
+  padding: 10px 20px !important;
+  border: 4px solid rgb(7, 1, 14);
+  background-color : none;
 }
