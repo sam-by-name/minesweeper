@@ -125,21 +125,21 @@ function retryMed () {
   removeListeners ();
   restart ();
   grid = 6;
-  document.getElementById('body').style.background = 'url(nightsky.jpg)'; 
+  document.getElementById('body').style.background = 'url(ff7Toon.jpg)'; 
   startGame (); 
 }
 function retryHard () {
   removeListeners ();
   restart ();
   grid = 9;
-  document.getElementById('body').style.background = 'url(nightsky.jpg)'; 
+  document.getElementById('body').style.background = 'url(Mc.jpg)'; 
   startGame (); 
 }
 function retryVeryHard () {
   removeListeners ();
   restart ();
   grid = 12;
-  document.getElementById('body').style.background = 'url(nightsky.jpg)'; 
+  document.getElementById('body').style.background = 'url(suicide.jpg)';
   startGame (); 
 }
 function restart () {
