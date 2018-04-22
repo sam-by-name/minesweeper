@@ -46,11 +46,12 @@ document.addEventListener('DOMContentLoaded', startGame)
     { row: 5, col: 4, isMine: "", isMarked: "", hidden: true },
     { row: 5, col: 5, isMine: "", isMarked: "", hidden: true },
   ]}*/
-var board = {
-  cells:[]
-}
+var board;
 
 function initGrid () {
+  board = {
+    cells:[]
+  }
   var grid = 6;
   for (var x = 0; x < grid; x++) {
     for (var y = 0; y < grid; y ++) {
@@ -116,5 +117,3 @@ function restart () {
   let board = document.getElementsByClassName('board')[0];
   board.innerHTML = '';
 }
-
-
