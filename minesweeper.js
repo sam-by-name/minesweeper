@@ -83,8 +83,8 @@ function startGame () {
   document.addEventListener('contextmenu', contextSound);
   document.addEventListener('click', theEnd, checkForWin);
   document.addEventListener('contextmenu', checkForWin);
-  updateCounts();
 }
+
 function checkForWin () {
   for (let i = 0; i < board.cells.length; i++) {
     let check = board.cells[i];
@@ -131,7 +131,7 @@ function retry () {
   removeListeners ();
   restart ();
   startGame ();
-  document.getElementById('ready').play(); 
+  startSound(); 
 }
 
 function restart () {
@@ -196,27 +196,3 @@ function startSound (){
   let audio = new Audio('./sound/restart.mp3');
   audio.play();
 }
-
-
-function updateCounts () {
-  let mine = document.getElementsByClassName('board')[0].children
-  let totals = {
-    isMine: 0,
-  }
-  for (let i = 0; i < mine.length; i++) {
-    if (mine[i].classList.contains('isMine')) totals.mine++
-  }
-  displayTotals(totals)
-}
-
-function displayTotals (totals) {
-  for (var key in totals) {
-    document.getElementById(key + '-total').innerHTML = totals[key]
-  }
-}
-function displayTotals (totals) {
-  for (var key in totals) {
-    document.getElementById(key + '-total').innerHTML = totals[key]
-  }
-}
-
