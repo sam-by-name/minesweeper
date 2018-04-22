@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
+  background: url(minesweeper.jpg);
 }
 
 #message, #notes {

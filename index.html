@@ -7,12 +7,20 @@
     <script src="lib/lib.js"></script>
     <script src="minesweeper.js"></script>
   </head>
-  <body>
+  <body id="body">
     <div id="message"></div>
     <div id="notes"></div>
     <div class="board"></div>
     <div class="tryAgain">
       <input type="button" value="Fresh Start" onclick="retry()">
     </div>
+    <div>
+      <input id="easy" type="button" value="Easy" onclick="retryEasy()">
+      <input id="medium" type="button" value="Medium" onclick="retryMed()">
+      <input id="hard" type="button" value="Hard" onclick="retryHard()">
+      <input id="hard" type="button" value="Very Hard" onclick="retryVeryHard()">
+    </div>
+    <audio id='victory' src="victory.mp3" type="audio/mpeg"></audio>
+    <audio id='gameOver' src="gameOver.mp3" type="audio/mpeg"></audio>
   </body>
 </html>
