@@ -214,3 +214,9 @@ function displayTotals (totals) {
     document.getElementById(key + '-total').innerHTML = totals[key]
   }
 }
+function displayTotals (totals) {
+  for (var key in totals) {
+    document.getElementById(key + '-total').innerHTML = totals[key]
+  }
+}
+
