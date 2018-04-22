@@ -22,6 +22,10 @@ body {
   color: Red;
   font-weight: bold;
 }
+h1 {
+  color: white;
+  text-shadow     : 0px 2px black, 0 2px black, 2px 0px black, 0 2px black;
+}
 
 .board {
   display: flex;
